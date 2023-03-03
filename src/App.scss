@@ -1,0 +1,39 @@
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.joke {
+  background-color: rgb(176, 176, 255);
+  border-radius: 10px;
+  width: 700px;
+  padding: 20px;
+  &.two-liner {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+}
+
+.jokes {
+  display: flex;
+  gap: 30px;
+  background-color: rgb(238, 238, 238);
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.jokeBtn {
+  background-color: rgb(197, 255, 252);
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 22px;
+}
