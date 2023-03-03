@@ -1,6 +1,5 @@
 import './App.scss';
 import { useState, useEffect } from 'react';
-import Single from './Components/Single';
 import TwoPart from './Components/TwoPart';
 
 function App() {
@@ -71,9 +70,14 @@ function App() {
           </button>
         </div>
         <ul>
-          {singleLiners
-            ? <span className='joke one-liner'>{items.jokes.filter((joke) => joke.type === 'single')[jokeNum].joke}</span>
-            : null}
+          {singleLiners ? (
+            <span className='joke one-liner'>
+              {
+                items.jokes.filter((joke) => joke.type === 'single')[jokeNum]
+                  .joke
+              }
+            </span>
+          ) : null}
           {multiLiners ? (
             <TwoPart items={items} jokeNum={jokeNum}></TwoPart>
           ) : null}
